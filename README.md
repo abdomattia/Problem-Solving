@@ -2,7 +2,7 @@
 Problem on LeetCode
 https://leetcode.com/problems/contains-duplicate/
 
-# Method 1 --  hashtable
+### Method 1 --  hashtable
 
 ```python
     
@@ -18,7 +18,7 @@ class Solution:
         return False 
 ```     
 
- # Method 2 -- Sorting
+ ### Method 2 -- Sorting
  
 ```python
     
