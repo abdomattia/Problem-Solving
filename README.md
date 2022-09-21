@@ -2,6 +2,9 @@
 Problem on LeetCode
 https://leetcode.com/problems/contains-duplicate/
 
+## My youtube channel Where I make a full explanation and interpretation of the answers
+https://www.youtube.com/watch?v=hI6dDj0OEg8&list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb&index=3&pp=sAQB
+
 ### Method 1 --  hashtable
 
 ```python
