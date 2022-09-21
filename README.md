@@ -4,9 +4,8 @@ https://leetcode.com/problems/contains-duplicate/
 # Method 1 --  hashtable
 <code> <br/>
     
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        
+class Solution:    
+    def containsDuplicate(self, nums: List[int]) -> bool:        
         hashNum = {}
         for i in nums :
             if i not in hashNum:
@@ -19,8 +18,7 @@ class Solution:
  # Method 2 -- Sorting
 <code> <br/>
     
-class Solution:
-    
+class Solution:    
     def containsDuplicate(self, nums: List[int]) -> bool:
         nums.sort()
         for i in range(1,len(nums)):
