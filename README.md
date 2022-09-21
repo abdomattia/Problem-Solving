@@ -2,7 +2,8 @@ Problem on LeetCode
 https://leetcode.com/problems/contains-duplicate/
 
 # Method 1 --  hashtable
-<code> <br/>
+
+```python
     
 class Solution:
     
@@ -14,11 +15,11 @@ class Solution:
             else:
                 return True                                             
         return False 
- </code>       
+```     
 
  # Method 2 -- Sorting
  
-<code> <br/>
+```python
     
 class Solution:
     
@@ -28,7 +29,7 @@ class Solution:
             if nums[i] == nums[i-1]:
                 return True
         return False
-</code>
+```
 
 
           
