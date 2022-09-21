@@ -2,7 +2,8 @@ Problem on LeetCode
 https://leetcode.com/problems/contains-duplicate/
 
 # Method 1 --  hashtable
-<code>
+<code> <br/>
+    
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         
@@ -16,7 +17,8 @@ class Solution:
  </code>       
 
  # Method 2 -- Sorting
-<code>
+<code> <br/>
+    
 class Solution:
     
     def containsDuplicate(self, nums: List[int]) -> bool:
