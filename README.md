@@ -1,45 +1,41 @@
-## 2. Add Two Numbers
+## 1. Two Sum
 Problem on LeetCode
 https://leetcode.com/problems/two-sum/
 
 My youtube channel Where I make a full explanation and interpretation of the answers <br/>
-https://www.youtube.com/watch?v=Tk5ua83L7tg&list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb&index=2&t=5s
+https://www.youtube.com/watch?v=r8z506Ox3zM&list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb&index=1&t=460s
 
+### Method 1 --  Brute Force
 
 ```python
     
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
         
-        result = ListNode(0)
-        pointer = result
-        carry = 0
+        for i in range(len(nums)):
+            for j in range(i+1 , len(nums)):
+                if nums[j] == target - nums[i]:
+                    return [i,j]
         
-        while l1 != None or l2 != None or carry != 0:
-            l1Val = l1.val if l1 else 0
-            l2Val = l2.val if l2 else 0
-            columnSum = l1Val +l2Val + carry
-            carry = columnSum // 10
-            columnSum = columnSum %10 
-            newNode = ListNode(columnSum)
-            pointer.next = newNode
-            
-            pointer = newNode
-            l1 = l1.next if l1 else None
-            l2 = l2.next if l2 else None 
-        
-        return result.next                        
-                       
+                                                         
                 
 ```     
+### Method 2 --  Hash Table
 
 
+```python
 
-
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        
+        hashtab = {}
+        for i in range(len(nums)):
+            cond = target - nums[i]
+            if cond in hashtab:
+                return [i ,hashtab[cond]]
+            hashtab[nums[i]] = i
+        
+        
+        
           
-
+```
