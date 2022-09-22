@@ -1,8 +1,38 @@
-# Problem-Solving
-LeetCode Problem Solving 
+242. Valid Anagram
+Problem on LeetCode
+https://leetcode.com/problems/valid-anagram/
 
-My youtube channel Where I make a full explanation and interpretation of the answers <br/>
-https://www.youtube.com/playlist?list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb
+## My youtube channel Where I make a full explanation and interpretation of the answers
+https://www.youtube.com/watch?v=hI6dDj0OEg8&list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb&index=3&pp=sAQB
 
-## Look at the branches above 
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--iPqkC_pN--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i1.wp.com/artiss.blog/wp-content/uploads/2020/06/Screenshot-2020-06-14-at-13.53.12.png%3Fw%3D723%26ssl%3D1" width="460"/>
+### Method 1 --  hashtable
+
+```python
+    
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+        
+        dic1 , dic2 = {} , {}
+        
+        for item in s:
+            dic1[item] = dic1.get(item,0) +1
+        for item in t:
+            dic2[item] = dic2.get(item,0) +1
+        return dic1 == dic2
+```     
+
+ ### Method 2 -- Sorting
+ 
+```python
+    
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+        
+```
+
+
+          
+
