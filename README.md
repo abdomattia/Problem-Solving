@@ -1,4 +1,4 @@
-242. Valid Anagram
+## 242. Valid Anagram
 Problem on LeetCode
 https://leetcode.com/problems/valid-anagram/
 
