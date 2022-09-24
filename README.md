@@ -4,7 +4,7 @@ Problem on LeetCode
 https://leetcode.com/problems/group-anagrams/
 
 ## My youtube channel Where I make a full explanation and interpretation of the answers
-https://www.youtube.com/watch?v=wF0TyEsmNO4&list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb&index=4&pp=sAQB
+https://www.youtube.com/watch?v=co8SuVnJ1uk&list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb&index=5&pp=sAQB
 
 ### Method 
 
