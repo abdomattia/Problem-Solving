@@ -1,8 +1,57 @@
-# Problem-Solving
-LeetCode Problem Solving 
+## 344. Reverse String
+Problem on LeetCode
+https://leetcode.com/problems/reverse-string/
 
-My youtube channel Where I make a full explanation and interpretation of the answers <br/>
-https://www.youtube.com/playlist?list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb
+## My youtube channel Where I make a full explanation and interpretation of the answers
+https://youtu.be/KGUiTqNChkg
 
-## Look at the branches above 
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--iPqkC_pN--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i1.wp.com/artiss.blog/wp-content/uploads/2020/06/Screenshot-2020-06-14-at-13.53.12.png%3Fw%3D723%26ssl%3D1" width="460"/>
+### Method 1 
+```python
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        l,r=0,len(s)-1
+        while l<r:
+            s[l],s[r]=s[r],s[l]
+            l,r=l+1,r-1
+```
+
+### Method 2 
+
+```python
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        s[:] = s[::-1]
+```
+
+### Method 3 : stack
+
+```python
+    
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        stack = []
+        for c in s :
+            stack.append(c)
+        i=0
+        while stack:
+            s[i]=stack.pop()
+            i +=1
+        
+        
+        
+```
+
+
+
+
+          
+
