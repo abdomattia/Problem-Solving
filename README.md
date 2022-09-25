@@ -3,7 +3,7 @@ Problem on LeetCode
 https://leetcode.com/problems/reverse-string/
 
 ## My youtube channel Where I make a full explanation and interpretation of the answers
-https://youtu.be/KGUiTqNChkg
+https://www.youtube.com/watch?v=KGUiTqNChkg&list=PL9bTI0hoGCu0d9FDJVpy_cpmwuOiLCVgb&index=7&pp=sAQB
 
 ### Method 1 
 ```python
